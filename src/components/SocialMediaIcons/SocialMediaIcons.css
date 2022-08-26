@@ -1,0 +1,18 @@
+.iconos-redes {
+    margin: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #b3bf5a;
+    font-size: 32px;
+    padding: 9px;
+    transition: 0.5s;
+}
+
+.iconos-redes:hover {
+    transition: 0.5s;
+    color: #6b7236;
+    box-shadow: 3px 7px 20px #6b7236;
+} 

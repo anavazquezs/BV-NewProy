@@ -1,0 +1,23 @@
+.lista-nosotros {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    
+}
+
+.titulo-nosotros {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 879px) {
+    .lista-nosotros {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

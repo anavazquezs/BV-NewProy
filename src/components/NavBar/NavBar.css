@@ -1,0 +1,499 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    top: 0;
+}
+
+.navbar .logo {
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.lado-izquierdo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.centro {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 50%;
+}
+
+.lado-derecho {
+    display: flex;
+    flex: 10%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-navbar {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 7px;
+    border: 2px solid #CFD984;
+}
+
+
+
+
+/*======= CSS DE LISTA DE NAVBAR ============ */
+.centro div ul  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.centro div ul li {
+    color: black;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+/* .centro div ul li:hover {
+    transition: 0.5s;
+    background-color: #DBE68D;
+} */
+
+.navLink {
+    text-decoration: none;
+    color: black;
+}
+
+.boton-lista {
+    background-color: transparent;
+    border: none;
+    /* text-transform: uppercase; */
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+
+
+
+/* ============ CSS DE ICONOS Y CONTADOR ============ */
+.circulos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.circulo {
+    margin: 5px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #CFD984;
+}
+
+.circulo:hover {
+    background-color: #B1BF49;
+}
+
+.search {
+    font-size: 22px;
+    color: white;
+    margin: 11px;
+}
+
+.login {
+    font-size: 22px;
+    color: white;
+    margin: 11px;
+}
+
+.carrito-icono {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    margin: 12px;
+}
+
+.carrito-boton {
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.contador {
+    width: 18px;
+    height: 18px;
+    background-color: #04B2D9;
+    color: #e7f1f3;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    right: 17px;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+
+/* ========== CSS RESPONSIVE =================== */
+
+@media only screen and (max-width: 574px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .logo {
+        max-width: 200px;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .lado-derecho {
+        width: 100%;
+        height: 60px;
+        background: none;
+        background-color: #DBE68D; /*Tuve que poner none para sacar el color que aparece en banner a partir de este breakpoint*/
+    }
+
+    .boton-navbar {
+        flex: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown {
+        background-color: #fefffa;
+        display: flex;
+        color: #AFBF30;
+        margin-left: 50px;
+    }
+
+    #vista {
+        display: flex;
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        left: 0;
+        top: 194px;
+        z-index: 30;
+    }
+
+    #escondida {
+        display: none;        
+    }
+
+    /* Iconos de Buscar, Usuario y Carrito */
+    .circulos {
+        margin-right: 10px;
+    }
+
+    .circulo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search {
+        font-size: 17px;
+        color: white;
+        margin: 11px;
+    }
+
+    .login {
+        font-size: 17px;
+        color: white;
+        margin: 11px;
+    }
+
+    .carrito-icono {
+        font-size: 17px;
+        color: white;
+        margin: 11px;
+    }
+
+    .circulo-carrito {
+        position: relative;
+    }
+
+    .contador {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 3px;
+        right: -6px;
+    }
+
+    .centro {
+        width: 100%;
+    }
+
+    .centro div ul {
+        width: 100%;
+        height: 250px;
+        background-color: #f6feea;
+        flex-direction: column;
+        text-align: left;
+        /* border: 2px solid #B1BF49; */
+        align-items: center;
+        animation: growDown 700ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+        @keyframes growDown {
+            0% {
+                transform: rotateX(-80deg)
+            }
+            70% {
+                transform: rotateX(20deg)
+            }
+            100% {
+                transform: rotateX(20deg)
+            }
+
+        }
+
+    .centro div ul li  {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .centro div ul li:hover {
+        transition: 0.5s;
+        background-color: #DBE68D;
+    }
+
+    .ultimo {
+        border-bottom: none;
+    }
+
+    .boton-lista {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:575px) and (max-width:918px) {
+    .boton-navbar {
+        display: flex;
+    }
+
+    #vista {
+        display: flex;
+        z-index: 30;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 130px;
+        z-index: 30;
+    }
+
+    .circulo-carrito {
+        position: relative;
+    }
+
+    #escondida {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .centro {
+        width: 100%;
+    }
+
+    .centro div ul  {
+        width: 100%;
+        background-color: #f6feea;
+        flex-direction: column;
+        text-align: left;
+        /* border: 2px solid #B1BF49; */
+        align-items: center;
+        animation: growDown 700ms ease-in-out forwards;
+        transform-origin: top center;
+
+    }
+
+    @keyframes growDown {
+        0% {
+            transform: rotateX(-80deg)
+        }
+        70% {
+            transform: rotateX(20deg)
+        }
+        100% {
+            transform: rotateX(20deg)
+        }
+
+    }
+
+
+    .centro div ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    
+    }
+
+    .centro div ul li:hover {
+        transition: 0.5s;
+        background-color: #DBE68D;
+    }
+
+    .ultimo {
+        border-bottom: none;
+    }
+
+    .boton-lista {
+        font-size: 15px;
+    }
+
+    .contador {
+        right: -7px;
+        top: 0px;
+    }
+}
+
+@media (min-width:919px) and (max-width:996px) {
+
+    .boton-navbar {
+        display: flex;
+    }
+    
+    .boton-lista {
+        font-size: 14px;
+    }
+
+    .centro {
+        width: 100%;
+    }
+
+    #vista {
+        display: flex;
+        position: absolute;
+        z-index: 30;
+        right: 0;
+        width: 100%;
+        top: 130px;
+        z-index: 30;
+    }
+
+    #escondida {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .centro div ul {
+        width: 100%;
+        background-color: #f6feea;
+        flex-direction: column;
+        /* text-align: center; */
+        /* border: 2px solid #B1BF49; */
+        align-items: center;
+        animation: growDown 700ms ease-in-out forwards;
+        transform-origin: top center;
+        justify-content: center;
+    }
+
+    @keyframes growDown {
+        0% {
+            transform: rotateX(-80deg)
+        }
+        70% {
+            transform: rotateX(20deg)
+        }
+        100% {
+            transform: rotateX(20deg)
+        }
+
+    }
+
+
+    .centro div ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    
+    }
+
+    .centro div ul li:hover {
+        transition: 0.5s;
+        background-color: #DBE68D;
+    }
+
+    .ultimo {
+        border-bottom: none;
+    }
+
+    .boton-lista {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width:997px) {
+    .centro div ul li  {
+        padding: 15px;
+    }
+
+    .circulo-carrito {
+        position: relative;
+    }
+
+    .contador {
+        top: 0;
+        right: -7px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .centro div ul  {
+        width: 100%;
+        display: flex;
+    }
+
+    
+
+    #vista {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        z-index: 30;
+    }
+
+    .boton-lista:hover {
+        font-weight: bold;
+    }
+}

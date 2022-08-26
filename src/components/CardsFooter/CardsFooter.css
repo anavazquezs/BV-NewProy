@@ -1,0 +1,214 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ramaraja', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif; */
+
+/* FOOTER - INICIO ESTILO */
+.footer-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3d3d3d;
+    color: #E2F8FF;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container p {
+    line-height: 20px;
+}
+
+.footer-container p:hover {
+    color: #E7B446;
+    transition: 94ms;  
+}
+
+.titulo-footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight:600;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+span {
+    color: red;
+    font-size: 18px;
+}
+
+.titulo-footer svg {
+    display: inline-block;
+}
+
+.card-container {
+    padding: 20px 20px 10px 20px; 
+    line-height: 20px;
+}
+/* FOOTER - INICIO ESTILO */
+
+.items-footer p {
+    cursor: pointer;
+}
+
+/* COPYRIGHT - INICIO ESTILO */
+.copyright {
+    background-color: #3d3d3d;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7px 12px 7px;
+    font-size: 14px;
+}
+
+.copyright p {
+    color:#E2F8FF;
+    font-style: italic;
+}
+
+.copyright .leyenda-1 {
+    color:#00A9DC;
+    font-size: 14px;
+}
+
+.copyright .leyenda-2 {
+    color:#A2C02F;
+    font-size: 14px;
+}
+
+.leyenda-3 {
+    font-size: 14px;
+}
+
+.grupo {
+    font-family: 'Poppins', sans-serif;
+    color:#E2F8FF;
+    line-height: 20px;
+}
+
+.sigla-0{
+    color: #e3172d;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.sigla-1 {
+    color: #e37a15;
+    font-size: 14px;
+}
+
+.sigla-2 {
+    color: #ffd334;
+    font-size: 14px;
+}
+
+.sigla-3 {
+    color: #0aa02b;
+    font-size: 14px;
+}
+
+.sigla-4 {
+    color: #00f8ff;
+    font-size: 14px;
+}
+
+.sigla-5 {
+    color: #d47bd4;
+    font-style: italic;
+    font-size: 14px;
+}
+/* COPYRIGHT - FINAL ESTILO */
+
+
+/* RESPONSIVIDAD - INICIO */
+@media all and (max-width: 900px) {
+    .copyright { 
+        font-size: 12px;
+    }
+    .leyenda-3 {
+        font-size: 12px;
+    }
+    .sigla-0 {
+        font-size: 12px;
+    }
+    .sigla-1 {
+        font-size: 12px;
+    }
+    .sigla-2 {
+        font-size: 12px;
+    }
+    .sigla-3 {
+        font-size: 12px;
+    }
+    .sigla-4 {
+        font-size: 12px;
+    }
+    .sigla-5 {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 808px) {
+    .copyright { 
+        font-size: 10px;
+    }
+    .leyenda-3 {
+        font-size: 10px;
+    }    
+}
+
+@media all and (max-width: 730px) {
+    .card-container {
+        padding: 20px 10px 10px 20px; 
+        line-height: 18px;
+    }
+    .footer-container p {
+        line-height: 16px;
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 14px ;
+    }
+    .copyright .leyenda-1 {
+        font-size: 12px;
+    }
+    .copyright .leyenda-2{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 679px) {
+    .footer-container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-container {
+        padding: 20px 10px 10px 20px; 
+        line-height: 18px;
+    }
+    .footer-container p {
+        line-height: 16px;
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 14px ;
+    }
+}
+
+/* @media all and (max-width: 360px) {
+   
+
+} */
+/* RESPONSIVIDAD - FINAL */

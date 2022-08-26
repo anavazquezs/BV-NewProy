@@ -1,0 +1,58 @@
+.contenedor-instacarousel {
+    background: #0bb3d9;
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-slide {
+    background: none;
+    width: 100vw;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.contenedor-img img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+.controles-instacarousel {
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.controles-instacarousel button {
+    background: none;
+    border: none;
+    pointer-events: all;
+    font-size: 2em;
+    color: #5ac2da;
+}
+
+.controles-instacarousel button:hover {
+    color:rgb(59, 150, 185);
+}
+
+@media only screen and (max-width: 800px) {
+    .contenedor-img img {
+        width: 70%;
+        margin-right: 105px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-img img {
+        width: 70%;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+}

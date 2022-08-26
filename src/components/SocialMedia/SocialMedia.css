@@ -1,0 +1,26 @@
+.contenedor-redes {
+    padding: 30px;
+    background-color: #b3bf5a;
+}
+
+.redes-titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.redes {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 580px) {
+.iconos-redes {
+    margin: 10px;
+    }
+}
