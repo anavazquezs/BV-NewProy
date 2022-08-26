@@ -7,6 +7,7 @@ import useCartContext from '../../hooks/useCartContext';
 
 const NavBar = () => {
     const [ showList, changeShowList ] = useNavbar(false);
+    //Llamada al contador del contexto para mostrar el total de elementos en el carrito del navbar
     const { counter } = useCartContext();
 
   return (

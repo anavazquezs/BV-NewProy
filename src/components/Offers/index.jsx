@@ -5,10 +5,13 @@ import './Offers.css';
 import { useModal } from '../../hooks/useModal';
 
 function Offers() {
+    //Se usa hook customizado useModal
     const [ isOpenModalOffers, openModalOfffers, closeModalOffers ] = useModal(false);
 
+    //Se muestra o no la oferta
     const [ open, setOpen ] = useState(true);
     
+    //Ofertas
     const offers = ['20 % off en cursos', '35 % off en libros', '10 % off en spa', '25 % off en cosméticos'];
 
   return (
@@ -24,9 +27,9 @@ function Offers() {
             </div>
             <Modal isOpen={isOpenModalOffers} closeModal={closeModalOffers}>
                 <div className='offers-modal'>
-                    <h3>{offers[Math.floor(Math.random() * (3 - 0 + 1))]}</h3>
+                    <h3>{offers[Math.floor(Math.random() * (3 - 0 + 1))]}</h3> {/* MathRandom entre 1 y 4 porque hay sólo 4 ofertas*/}
                     <h1>TU CÓDIGO:</h1>
-                    <h2>BVWH-{Math.random()}</h2>
+                    <h2>BVWH-{Math.random()}</h2> {/* Random entre 0 y 1 para el código */}
                 </div>
             </Modal>
         </>

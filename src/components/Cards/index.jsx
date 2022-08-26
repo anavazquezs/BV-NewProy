@@ -15,14 +15,17 @@ const Cards = ({ mykey, img, product, price, offer }) => {
 
     const { cart, addToCart, addCounter, addTotalPrice } = useCartContext();
 
+    //Se crea la callback para onClick del comprar que llama a variables del contexto useCartContext
     const handleOnClick = () => {
       addCounter();
       addTotalPrice(objProduct.price);
+      //Cambia la cantidad del item si coincide con el id del objProduct comprado
       cart.forEach((item) => {
         if(item.id === objProduct.id) {
           item.cant++;
         }
       });
+      //Si el producto ya está en el carrito no se suma al carrito, sólo cambiará la cantidad
       const isInCart = cart.find((item) => item.id === objProduct.id);
       if(!isInCart) {
         addToCart(objProduct);

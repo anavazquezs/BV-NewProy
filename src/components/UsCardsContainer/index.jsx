@@ -3,6 +3,8 @@ import "./UsCardsContainer.css";
 import { ABOUT_US } from '../../helpers/dataUs';
 import UsCards from '../UsCards/index';
 
+//Los datos de Nosotros están en un archivo en helpers/dataUs
+
 const UsCardsContainer = () => {
   
   return (

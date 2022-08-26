@@ -10,12 +10,15 @@ import './Cart.css';
 
 const Cart = () => {
 
+    //Desestructura los estados y funciones que usa del contexto
   const { cart, counter, totalPrice, removeFromCart, resetCart, substractCounter, substTotalPrice } = useCartContext();
 
+  //Desestructura lo que requiere para usar el modal
   const [ isOpenModalCart, openModalCart, closeModalCart ] = useModal(false);
 
   return (
     <div className='contenedor-cart'>
+        {/* Si el contador es mayor a 1 es porque ya hay productos en el carrito. En ese caso, muestra el carrito con la compra. Caso contrario (buscar ":"), dice que el carrito está vacío */}
         {counter > 0 ? 
             <>
                 <div className='contenedor-cart-lleno'>

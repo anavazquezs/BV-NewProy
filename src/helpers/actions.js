@@ -1,3 +1,5 @@
+//Exporta el objeto de acciones del reducer y contexto
+
 export const ACTIONS = {
     ADD_TO_CART: 'ADD_TO_CART',
     REMOVE_ONE_FROM_CART: 'REMOVE_ONE_FROM_CART',

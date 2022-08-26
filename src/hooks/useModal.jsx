@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+//Hook para usar modal y cambios de estado con useState del modal
+
 export const useModal = (initialValue = false) => {
     const [ isOpen, setIsOpen ] = useState(initialValue);
 

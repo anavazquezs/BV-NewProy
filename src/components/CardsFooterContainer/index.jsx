@@ -2,6 +2,8 @@ import { DATA_FOOTER } from '../../helpers/dataFooter';
 import CardsFooter from '../CardsFooter';
 import '../CardsFooter/CardsFooter.css';
 
+//Los datos del footer están en el helpers/dataFooter
+
 const CardsFooterContainer = () => {
   return (
     <>

@@ -3,6 +3,7 @@ import '../Cards/Cards.css';
 import useAxios from "../../hooks/useAxios";
 
 const CardsContainer = ({name}) => {
+  //Llamada a la API falsa de productos con hook cusmotizado useAxios():
     const {data: productsCards, isLoading: isLoadingCards, error: errorCards } = useAxios('https://run.mocky.io/v3/f4661f67-02fb-4aaf-bff2-26df9a77c4fd');
 
   return (

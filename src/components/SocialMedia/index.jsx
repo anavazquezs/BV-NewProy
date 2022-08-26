@@ -2,6 +2,7 @@ import { SOCIAL_ICONS } from '../../helpers/socialIcons';
 import SocialMediaIcons from '../SocialMediaIcons';
 import './SocialMedia.css';
 
+//Los íconos están en un archivo de helpers/socialIcons
 
 const SocialMedia = () => {
   return (

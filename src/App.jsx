@@ -11,6 +11,8 @@ import Formulario from './screens/Form';
 import Cart from './screens/Cart/index';
 
 function App() {
+  
+  //Toda la app se envuelve en el proveedor de contexto para que cualquier componente lo pueda utilizar
 
   return (
       <CartContextProvider>
